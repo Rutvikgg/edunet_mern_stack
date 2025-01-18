@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Fira Code', serif;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      header {
+        /* height: 80px; */
+        background-color: #A4D4F0;
+        border-bottom: 2px solid rgb(71, 68, 68);
+        box-shadow: 0px 0px 10px 0px black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0px;
+        justify-content: space-around;
+
+      }
+      li {
+        padding: 30px 40px;
+      }
+      button {
+        font-family: inherit;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 0 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: #0056d2;
+      }
+      a:link, a:visited, a:active {
+        color: #eef9fe;
+        text-decoration: none;
+
+      }
+      section {
+        height: 88vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center;">
+        <img src="logo.jpg" alt="Logo" style="mix-blend-mode: multiply;" />
+        <span style="margin-left: 10px;">Panchhi</span>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Product</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <button><a href="login.html">Logout</a></button>
+    </header>
+    <main>
+      <section style="display: flex; justify-content: space-between;">
+        <aside style="width: 300px; margin-top: 30px;">
+          <ul style="display: flex; flex-direction: column; list-style: none;">
+            <li style="padding: 10px 20px; background-color: violet;">
+              Hyderbad
+            </li>
+            <li style="padding: 10px 20px; background-color: orange;">
+              Mumbai
+            </li>
+            <li style="padding: 10px 20px; background-color: yellowgreen;">
+              Banglore
+            </li>
+          </ul>
+        </aside>
+        <p>
+          Indian Pond Heron
+          <br />
+          A medium sized water bird that can be found even at small Ponds. This
+          dull looking bird can be easily missed as it stealthily stalks frogs,
+          fish and insects. Its bright white wings become very conspicuous when
+          it takes to flight. Can be easily seen near water bodies with plants
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

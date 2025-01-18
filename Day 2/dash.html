@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        font-family: 'Fira Code', serif;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      header {
+        /* height: 80px; */
+        background-color: #A4D4F0;
+        border-bottom: 2px solid rgb(71, 68, 68);
+        box-shadow: 0px 0px 10px 0px black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0px;
+        justify-content: space-around;
+
+      }
+      li {
+        padding: 30px 40px;
+      }
+      button {
+        font-family: inherit;
+        font-size: 15px;
+        padding: 10px 20px;
+        margin: 0 30px;
+        border: none;
+        border-radius: 50px;
+        background-color: #0056d2;
+      }
+      a:link, a:visited, a:active {
+        color: #eef9fe;
+        text-decoration: none;
+
+      }
+      section {
+        height: 88vh;
+      }
+      .section1 {
+
+        background-image: url("hero_img.jpg");
+        background-size: stretch;
+        background-position: 5% 8%;
+        background-repeat: no-repeat;
+      }
+      h1 {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 60px;
+        width: 50%;
+        padding-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div style="display: flex; align-items: center;">
+        <img src="logo.jpg" alt="Logo" style="mix-blend-mode: multiply;" />
+        <span style="margin-left: 10px;">Panchhi</span>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Product</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <button><a href="login.html">Logout</a></button>
+    </header>
+    <main>
+      <section class="section1">
+        <h1>Where Wings Take Flight: A World of Birds</h1>
+      </section>
+      <section class="section2">
+        <article style="margin-top: 20px; margin-left: 20px;">
+          <div>
+            <img
+              src="bird1.jpeg"
+              alt=""
+              style="height: 80vh; width: 30%; border: #0056d2 solid 5px; border-radius: 20px;"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

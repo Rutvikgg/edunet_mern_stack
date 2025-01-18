@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Register</title>
+    <style>
+
+      h1 {color: white;}
+        input {
+          height: 30px;
+          width: 250px;
+          font-size: 20px;
+          font-family: inherit;
+          border-radius: 10px;
+          padding-left: 10px;
+        }
+        button {
+          height: 30px;
+          width: 256px;
+          font-size: 20px;
+          background-color: #0056d2;
+          color: #eef9fe;
+          border: none;
+          font-family: inherit;
+        }
+        a:link, a:visited, a:active {
+          text-decoration: none;
+          color: #eef9fe;
+        }
+        video {
+          position: fixed;
+          z-index: -1;
+          width: 120%;
+
+        }
+        .form {
+
+          width: 400px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+        }
+        body {
+          margin: 0;
+          /* margin-top: 30%;
+          margin-left: 30%; */
+          font-family: "Fira Code", serif;
+          /* background-image: url("reg_img.jpg");
+          background-size: cover; */
+        }
+        div {
+          margin: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <video autoplay loop muted>
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <div class="form">
+      <form action="">
+        <h1>Registration Form</h1>
+        <div>
+          <input type="text" value="" placeholder="Enter Full Name" />
+        </div>
+        <div>
+          <input type="email" placeholder="Enter Email" />
+        </div>
+        <div>
+          <input type="password" placeholder="Enter password" />
+        </div>
+        <div>
+          <button>Register</button>
+        </div>
+        <div>
+          <button><a href="login.html"> Login Instead? </a></button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
