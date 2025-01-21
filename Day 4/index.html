@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 4</title>
+    <script>
+      // var a = prompt("Enter the value")
+      // var b = prompt("Enter the value")
+
+      // if (a === b) {
+      //   alert(`${a} and ${b} are same`)
+      // } else {
+      //   alert(`${a} and ${b} are different`)
+      // }
+
+      // var amount = parseInt(prompt("Enter trip amount"));
+      // var payee = prompt("Are you student, employee or elder").toLowerCase();
+
+      // if (payee === 'student') {
+      //   alert(`Amount to pay ${amount - (amount * 0.25)}`);
+      // } else if (payee === 'employee') {
+      //   alert(`Amount to pay ${amount - (amount * 0.1)}`);
+      // } else if (payee === 'elder') {
+      //   alert(`Amount to pay ${amount - (amount * 0.75)}`);
+      // } else {
+      //   alert("You entered a wrong user!")
+      // }
+
+      // function change_name1() {
+      //   document.getElementById("demo").innerHTML = "Hello SAAP!"
+      // }
+      // function change_name2() {
+      //   document.getElementById("demo").innerHTML = "Hello Ayyan!"
+      // }
+    </script>
+    <style>
+         body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .icon {
+        position: relative;
+        display: inline-block;
+        margin: 20px;
+        cursor: pointer;
+        font-size: 24px;
+      }
+
+      .hover-box {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+      }
+
+      .hover-box ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .hover-box li {
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: background-color 0.2s;
+      }
+
+      .hover-box li:hover {
+        background-color: #e0e0e0;
+      }
+
+      .icon:hover .hover-box {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="light">
+    <!-- <div id="demo">Hello World!</div>
+    <button onclick="change_name1()">Click</button>
+    <button onclick="change_name2()">Click</button> -->
+    <!-- <form id="myForm">
+      <input id="username" type="text" placeholder="username" />
+      <input id="password" type="password" placeholder="password" />
+      <input
+        id="confirmPassword"
+        type="password"
+        placeholder="Confirm password"
+      />
+      <button type="submit">Submit</button>
+    </form> -->
+    <!-- <input id="username" type="text" placeholder="username" />
+    <input id="password" type="password" placeholder="password" />
+    <button onclick="submit()">Submit</button> -->
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, harum
+      reiciendis possimus delectus sapiente, distinctio, corporis aperiam
+      molestiae fuga odio tenetur. Sit.
+    </div>
+    <!-- <button onclick="toggle()">Toggle Switch</button> -->
+    <label for="color-toggle">Change Theme</label>
+    <!-- <select name="color-toggle" id="color-toggle" onchange="toggle(value)">
+      <option value="null">-------</option>
+      <option value="red">Red</option>
+      <option value="white">White</option>
+      <option value="black">Black</option>
+      <option value="orange">orange</option>
+    </select> -->
+
+    <!-- 
+    <p id="output">output</p> -->
+    <div class="icon">
+      🎨
+      <div class="hover-box">
+        <ul>
+          <li data-bg="#ffffff" data-color="#000000">
+            White Background, Black Text
+          </li>
+          <li data-bg="#000000" data-color="#ffffff">
+            Black Background, White Text
+          </li>
+          <li data-bg="#f0f8ff" data-color="#333333">
+            AliceBlue Background, Dark Gray Text
+          </li>
+          <li data-bg="#ffebcd" data-color="#8b4513">
+            BlanchedAlmond Background, SaddleBrown Text
+          </li>
+          <li data-bg="#add8e6" data-color="#00008b">
+            LightBlue Background, DarkBlue Text
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+        // document.getElementById("myForm").addEventListener("submit", function submit(e) {
+        //   e.preventDefault();
+        //   const username = document.getElementById("username").value;
+        //   const password = document.getElementById("password").value;
+        //   const confirmPassword = document.getElementById("confirmPassword").value;
+        //   if (password === confirmPassword) {
+
+        //     document.getElementById("output").innerHTML = `<ul><li>Username: ${username}</li> <li>Password: ${password}</li></ul>`;
+        //   } else {
+        //     document.getElementById("output").innerText = "You entered wrong passwords";
+        //     document.getElementById("password").style.border = "2px solid red"
+        //     document.getElementById("confirmPassword").style.border = "2px solid red"
+        //   }
+        // })
+
+        const toggle = () => {
+          if (value == 'red') {
+            document.body.style.color = "red"
+            document.body.style.backgroundColor = "yellowgreen"
+          }
+          else if (value == 'white') {
+            document.body.style.color = "white"
+            document.body.style.backgroundColor = "black"
+          }
+          else if (value == 'black') {
+            document.body.style.color = "black"
+            document.body.style.backgroundColor = "white"
+          }
+          else if (value == 'orange') {
+            document.body.style.color = "orange"
+            document.body.style.backgroundColor = "blue"
+          } else if (value == "null") {
+
+          }
+        }
+      const listItems = document.querySelectorAll('.hover-box li');
+
+      listItems.forEach(item => {
+        item.addEventListener('click', () => {
+          const bgColor = item.getAttribute('data-bg');
+          const textColor = item.getAttribute('data-color');
+          document.body.style.backgroundColor = bgColor;
+          document.body.style.color = textColor;
+        });
+      });
+    </script>
+  </body>
+</html>
