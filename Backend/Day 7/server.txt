@@ -1,0 +1,20 @@
+// const http = require("http");
+// const port = 4000;
+// const obj = { name: "Rutvik", age: 25 };
+// const arr = ["Enna", "Meena", "Dikka"];
+
+// const server = http.createServer((req, res) => {
+//   // res.end(obj.name + " is " + obj.age + " years old");
+//   fetch("https://dummyjson.com/products")
+//     .then((res) => res.json())
+//     .then((data) => {
+//       for (let i = 0; i < data.products.length; i++) {
+//         res.write("- " + data.products[i].title + "\n");
+//       }
+//       res.end();
+//     });
+// });
+
+server.listen(port, () => {
+  console.log(`Server running on port http://localhost:${port}`);
+});
