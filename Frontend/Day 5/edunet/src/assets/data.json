@@ -1,0 +1,10 @@
+{
+  "name": "Allu Arjun",
+  "age": 20,
+  "hobbies": ["Acting", "Reading", "Watching Movies"],
+  "address": {
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "country": "India"
+  }
+}

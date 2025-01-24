@@ -12,17 +12,18 @@ function Products() {
   return (
     <>
       <div>fetching the data from API</div>
-      <div
+      <ul
         style={{
           display: "grid",
           gridTemplateColumns: "1fr 1fr 1fr",
           gap: "10px",
+          margin: "50px",
         }}
       >
         {data.map((item) => (
           <ProductCard key={item.id} data={item} />
         ))}
-      </div>
+      </ul>
     </>
   );
 }

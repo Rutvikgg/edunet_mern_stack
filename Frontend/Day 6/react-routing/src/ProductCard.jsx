@@ -26,9 +26,12 @@ export default function ProductCard({ key, data }) {
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions style={{ display: "flex", justifyContent: "flex-end" }}>
+      <CardActions style={{ display: "flex", justifyContent: "space-between" }}>
+        <Button size="small" color="primary" style={{ color: "red" }}>
+          {data.availabilityStatus}
+        </Button>
         <Button size="small" color="primary">
-          ${data.price} - only {data.stock} left
+          only {data.stock} left - ${data.price}
         </Button>
       </CardActions>
     </Card>
